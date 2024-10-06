@@ -1,0 +1,1 @@
+{"product_name": "Tesla", "quantity": 2, "total": 36000000.0, "user": "ritisha"}|{"product_name": "Ns200", "quantity": 2, "total": 800000.0, "user": "ritisha"}|{"product_name": "Tesla", "quantity": 5, "total": 90000000.0, "user": "bibek"}
