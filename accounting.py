@@ -88,9 +88,9 @@ def view_balance(user):
         if i: 
             user_dict_data = json.loads(i) 
             if user_dict_data["name"] == user:
-                print(i)
-    else:
-        print(f"{user} doesn't have any data to view!")
+                print(f"Current balance : {user_dict_data["balance"]}")
+        else:
+            print(f"{user} doesn't have any data to view!")
         
 def empty_balance_add(user,deposit):
     balance_dict= {"name":user,"balance":deposit}
@@ -214,7 +214,7 @@ def main():
 
     if logined:
         while True:
-            user_choice = input("1.View Balance\n2.Add Balance\n3.Withdraw Balance\n4.q to quit program\nChoose 1/2/3/q")
+            user_choice = input("1.View Balance\n2.Add Balance\n3.Withdraw Balance\n4.q to quit program\nChoose 1/2/3/q ")
             if user_choice == "1":
                 view_balance(user)
                 
